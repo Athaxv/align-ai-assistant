@@ -1,8 +1,7 @@
-
 import React, { useEffect, useRef } from 'react';
 import { ArrowRight } from 'lucide-react';
 import Container from '../ui/Container';
-import Button from '../ui/Button';
+import { Button } from '../ui/Button';
 
 const CTA = () => {
   const ctaRef = useRef<HTMLDivElement>(null);

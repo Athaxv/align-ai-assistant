@@ -1,9 +1,8 @@
-
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import Container from '../ui/Container';
-import Button from '../ui/Button';
+import { Button } from '../ui/Button';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
