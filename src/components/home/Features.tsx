@@ -7,34 +7,34 @@ import FeatureCard from './FeatureCard';
 const Features = () => {
   const features = [
     {
-      icon: <Camera className="h-6 w-6 text-primary" />,
-      title: 'Real-time Posture Detection',
-      description: 'Advanced AI algorithms detect incorrect postures in real-time using your webcam or uploaded videos.',
+      icon: <Activity className="h-6 w-6 text-primary" />,
+      title: 'Real-time Health Data Collection',
+      description: 'Clinics and community health volunteers submit health data through our secure mobile and web platforms for instant monitoring.',
     },
     {
       icon: <Brain className="h-6 w-6 text-primary" />,
-      title: 'AI Virtual Trainer',
-      description: 'A 3D virtual trainer guides you through exercises with personalized corrections.',
-    },
-    {
-      icon: <Activity className="h-6 w-6 text-primary" />,
-      title: 'Personalized Feedback',
-      description: 'Receive instant feedback and recommendations tailored to your specific posture issues.',
-    },
-    {
-      icon: <BarChart className="h-6 w-6 text-primary" />,
-      title: 'Progress Tracking',
-      description: 'Track your improvement over time with detailed analytics and visual progress charts.',
+      title: 'AI Disease Pattern Detection',
+      description: 'Advanced machine learning algorithms analyze health data patterns to identify potential disease outbreak indicators before they spread.',
     },
     {
       icon: <Zap className="h-6 w-6 text-primary" />,
-      title: 'Custom Workout Plans',
-      description: 'AI-generated workout plans customized to address your unique posture concerns.',
+      title: 'Water Quality Sensor Integration',
+      description: 'IoT sensors monitor water quality parameters including pH, turbidity, and bacterial levels to detect contamination sources.',
     },
     {
       icon: <Users className="h-6 w-6 text-primary" />,
-      title: 'Community Challenges',
-      description: 'Join posture challenges with others and earn achievements for consistency.',
+      title: 'Multi-language Alert System',
+      description: 'Instant notifications sent to communities and health officials in local languages via SMS, app, and voice messages.',
+    },
+    {
+      icon: <BarChart className="h-6 w-6 text-primary" />,
+      title: 'Community Health Dashboard',
+      description: 'Visual analytics and reporting tools for health officials to track outbreaks, allocate resources, and monitor intervention success.',
+    },
+    {
+      icon: <Camera className="h-6 w-6 text-primary" />,
+      title: 'Predictive Risk Assessment',
+      description: 'Early warning system uses historical data and environmental factors to predict high-risk areas and timeframes for outbreaks.',
     },
   ];
 
@@ -43,10 +43,10 @@ const Features = () => {
       <Container>
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Powerful AI Features
+            Comprehensive Disease Prevention Technology
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            PostTracker combines cutting-edge AI technology with user-friendly design to provide a comprehensive posture improvement experience.
+            Our integrated monitoring system combines real-time health data, water quality sensors, and AI-powered analytics to protect vulnerable communities from water-borne disease outbreaks.
           </p>
         </div>
 

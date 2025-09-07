@@ -18,10 +18,10 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { label: 'Features', href: '#features' },
-    { label: 'AI Trainer', href: '#trainer' },
-    { label: 'Progress', href: '#progress' },
-    { label: 'About', href: '#about' },
+    { label: 'Monitoring', href: '#features' },
+    { label: 'AI Detection', href: '#ai-detection' },
+    { label: 'Analytics', href: '#analytics' },
+    { label: 'FAQ', href: '#faq' },
   ];
 
   return (
@@ -40,9 +40,9 @@ const Navbar = () => {
           >
             <div className="relative h-8 w-8 rounded-lg bg-primary/10 flex items-center justify-center overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-tr from-primary to-blue-400 opacity-80"></div>
-              <span className="relative font-bold text-white text-lg">P</span>
+              <span className="relative font-bold text-white text-lg">A</span>
             </div>
-            <span className="font-semibold text-lg">PostTracker</span>
+            <span className="font-semibold text-lg">AquaGuard</span>
           </a>
 
           {/* Desktop Navigation */}
@@ -63,9 +63,9 @@ const Navbar = () => {
 
           <div className="hidden md:flex items-center space-x-4">
             <Button variant="ghost" size="sm">
-              Log in
+              Sign In
             </Button>
-            <Button size="sm">Get Started</Button>
+            <Button size="sm">Request Demo</Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -104,9 +104,9 @@ const Navbar = () => {
             </ul>
             <div className="pt-4 flex flex-col space-y-3">
               <Button variant="outline" className="w-full justify-center">
-                Log in
+                Sign In
               </Button>
-              <Button className="w-full justify-center">Get Started</Button>
+              <Button className="w-full justify-center">Request Demo</Button>
             </div>
           </div>
         </div>

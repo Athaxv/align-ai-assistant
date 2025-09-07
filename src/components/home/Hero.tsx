@@ -70,9 +70,9 @@ const Hero = () => {
           <div className="mb-8 flex justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-foreground/80 ring-1 ring-foreground/10 hover:ring-foreground/20 transition-all">
               <span className="hidden md:inline">
-                Introducing AI-powered posture correction
+                AI-powered disease outbreak prevention technology
               </span>
-              <span className="md:hidden">AI-powered posture correction</span>
+              <span className="md:hidden">Disease outbreak prevention</span>
               <a href="#features" className="font-semibold text-primary ml-1">
                 <span className="absolute inset-0" aria-hidden="true" />
                 Learn more <span aria-hidden="true">&rarr;</span>
@@ -80,14 +80,14 @@ const Hero = () => {
             </div>
           </div>
           <h1 className="text-4xl font-bold tracking-tight sm:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70 mb-6">
-            Perfect Your Posture with AI Precision
+            Protect Communities from Water-borne Disease
           </h1>
           <p className="mt-6 text-lg leading-8 text-foreground/80 max-w-lg mx-auto">
-            PostTracker uses advanced AI to detect, correct, and improve your posture in real-time, helping you build better habits for a healthier life.
+            AquaGuard uses advanced AI to detect, track, and prevent water-borne disease outbreaks through real-time health monitoring and smart alerts.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Button size="lg" className="rounded-full group">
-              <span>Get Started</span>
+              <span>Request Demo</span>
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
             <Button variant="outline" size="lg" className="rounded-full">

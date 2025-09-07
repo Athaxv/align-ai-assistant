@@ -53,17 +53,17 @@ const CTA = () => {
           {/* Content */}
           <div className="relative z-10 py-16 px-6 sm:py-24 sm:px-12 text-center">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-4">
-              Ready to improve your posture?
+              Ready to protect your community?
             </h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto mb-10">
-              Join thousands of users who have transformed their posture and improved their overall health with PostTracker.
+              Join health organizations worldwide using AquaGuard to prevent water-borne disease outbreaks and save lives.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button 
                 size="lg" 
                 className="rounded-full bg-white text-primary hover:bg-white/90 group"
               >
-                <span>Get Started for Free</span>
+                <span>Request Demo</span>
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
               <Button 
@@ -71,7 +71,7 @@ const CTA = () => {
                 size="lg" 
                 className="rounded-full border-white/30 text-white hover:bg-white/10"
               >
-                Learn More
+                Contact Health Team
               </Button>
             </div>
           </div>
