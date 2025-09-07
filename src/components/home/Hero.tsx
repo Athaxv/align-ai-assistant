@@ -4,6 +4,7 @@ import { ArrowRight } from 'lucide-react';
 import Container from '../ui/Container';
 import { Button } from '../ui/Button';
 import { cn } from '@/lib/utils';
+import dashboardImage from '@/assets/aquaguard-dashboard.jpg';
 
 const Hero = () => {
   const bgRef = useRef<HTMLDivElement>(null);
@@ -100,8 +101,8 @@ const Hero = () => {
           <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 to-blue-400/5 pointer-events-none"></div>
           
           <img
-            src="https://images.unsplash.com/photo-1593476123561-9516f2097158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1887&q=80"
-            alt="AI posture correction in action"
+            src={dashboardImage}
+            alt="AquaGuard Health Monitoring Dashboard showing real-time disease prevention analytics"
             className="w-full h-auto object-cover"
             loading="lazy"
           />
@@ -109,8 +110,8 @@ const Hero = () => {
           {/* Overlay elements showing posture detection */}
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="max-w-md mx-auto px-4 py-3 bg-white/80 backdrop-blur-md rounded-lg border border-white/30 shadow-lg text-center">
-              <div className="text-xs font-medium text-primary uppercase tracking-wider mb-1">AI Detecting</div>
-              <div className="text-lg font-semibold">Improving Shoulder Alignment</div>
+              <div className="text-xs font-medium text-primary uppercase tracking-wider mb-1">AI Monitoring</div>
+              <div className="text-lg font-semibold">Disease Outbreak Risk: Low</div>
             </div>
           </div>
         </div>
