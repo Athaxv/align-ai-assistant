@@ -5,6 +5,8 @@ import Container from '../ui/Container';
 import { Button } from '../ui/Button';
 import { cn } from '@/lib/utils';
 import dashboardImage from '@/assets/aquaguard-dashboard.jpg';
+import Spline from '@splinetool/react-spline';
+import SplineProvider from '../ui/splineProvider';
 
 const Hero = () => {
   const bgRef = useRef<HTMLDivElement>(null);
@@ -46,13 +48,20 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative overflow-hidden bg-white pt-24 pb-16 md:pb-20 lg:pt-32 lg:pb-24">
+    <div className="relative overflow-hidden  pt-24 pb-16 md:pb-20 lg:pt-32 lg:pb-24">
+      <div className="absolute inset-0 z-0 w-full h-full pointer-events-none" style={{ transform: 'translateY(-300px)' }}>
+        <SplineProvider>
+          <Spline scene="https://prod.spline.design/kIEq55kPdfiYfLCV/scene.splinecode" />
+        </SplineProvider>
+      </div>
+        
       <div 
         ref={bgRef}
         className="absolute inset-0 -z-10"
         aria-hidden="true"
       >
-        <div className="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
+        
+        <div className="absolute left-1/2 top-0 z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
           <div
             className="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5]/30 to-[#9089fc]/30 opacity-30"
             style={{
@@ -97,7 +106,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="mt-16 sm:mt-24 relative overflow-hidden rounded-xl bg-white shadow-xl ring-1 ring-foreground/5 opacity-0 animate-fade-in" style={{ animationDelay: '400ms' }}>
+        <div className="mt-16 sm:mt-24 relative overflow-hidden rounded-xl  shadow-xl ring-1 ring-foreground/5 opacity-0 animate-fade-in" style={{ animationDelay: '400ms' }}>
           <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 to-blue-400/5 pointer-events-none"></div>
           
           <img

@@ -35,8 +35,23 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col bg-background">
-      <Navbar />
+    
+    <div className="relative min-h-screen flex flex-col ">
+      {/* Radial Gradient Background */}
+  {/* Cool Blue Glow Top */}
+ 
+  <div className="min-h-screen w-full relative">
+  {/* Radial Gradient Background */}
+  {/* <div
+    className="absolute inset-0 z-[-1]"
+    style={{
+      background: "radial-gradient(125% 125% at 50% 10%, #93c5fd 0%, #2563eb 60%, #1e3a8a 100%)",
+    }}
+  /> */}
+     {/* Your Content/Components */}
+
+     <div className='relative z-10'>
+        <Navbar />
       <main className="flex-grow">
         <Hero />
         <Features />
@@ -44,7 +59,11 @@ const Index = () => {
         <CTA />
       </main>
       <Footer />
-    </div>
+      </div>
+</div>
+
+      </div>
+    // </div>
   );
 };
 
