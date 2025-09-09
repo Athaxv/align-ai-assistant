@@ -35,6 +35,12 @@ const navigationItems = [
     description: 'Dashboard overview and key metrics'
   },
   {
+    title: 'Analytics',
+    url: '/dashboard/analytics',
+    icon: TrendingUp,
+    description: 'Charts and trend analysis'
+  },
+  {
     title: 'Health Reports',
     url: '/dashboard/reports',
     icon: FileText,

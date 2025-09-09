@@ -339,23 +339,11 @@ const HealthReports = () => {
                   </div>
                 </div>
 
-                <div>
-                  <Label>Location</Label>
-                  <Select 
-                    value={newReport.locationId} 
-                    onValueChange={(value) => setNewReport(prev => ({ ...prev, locationId: value }))}
-                  >
-                    <SelectTrigger>
-                      <SelectValue placeholder="Select location" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {mockLocations.map((location) => (
-                        <SelectItem key={location.id} value={location.id}>
-                          {location.name}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
+                <div className="space-y-4">
+                  <GPSLocationCapture 
+                    onLocationSelect={(location) => setNewReport({...newReport, locationId: location.name})}
+                    selectedLocation={newReport.locationId ? {name: newReport.locationId} : null}
+                  />
                 </div>
 
                 <div>

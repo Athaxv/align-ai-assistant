@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { SidebarProvider } from '@/components/ui/sidebar';
 import DashboardLayout from '@/components/dashboard/DashboardLayout';
 import DashboardOverview from '@/components/dashboard/DashboardOverview';
+import AnalyticsDashboard from '@/components/dashboard/AnalyticsDashboard';
 import HealthReports from '@/components/dashboard/HealthReports';
 import SensorData from '@/components/dashboard/SensorData';
 import AlertsPanel from '@/components/dashboard/AlertsPanel';
@@ -19,6 +20,7 @@ const Dashboard = () => {
         <DashboardLayout>
           <Routes>
             <Route path="/" element={<DashboardOverview />} />
+            <Route path="/analytics" element={<AnalyticsDashboard />} />
             <Route path="/reports" element={<HealthReports />} />
             <Route path="/sensors" element={<SensorData />} />
             <Route path="/alerts" element={<AlertsPanel />} />
