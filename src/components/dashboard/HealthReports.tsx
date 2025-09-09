@@ -14,6 +14,7 @@ import { format } from 'date-fns';
 import { cn } from '@/lib/utils';
 import { mockHealthReports, mockLocations } from '@/data/mockData';
 import { HealthReport } from '@/types/dashboard';
+import { GPSLoationCapture } from '@/components/health/GPSLocationCapture';
 
 const HealthReports = () => {
   const [showForm, setShowForm] = useState(false);
