@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/ui/Button';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { MapPin, Layers, Filter, Maximize, Activity, Droplets, AlertTriangle } from 'lucide-react';
 import { mockLocations, mockRiskAssessment, mockHealthReports, mockSensorData } from '@/data/mockData';
