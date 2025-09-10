@@ -78,7 +78,7 @@ const UpdatedLoginForm = () => {
   return (
     <AuthLayout 
       title="Sign In" 
-      subtitle="Access your AquaGuard dashboard"
+      subtitle="Access your Arogyam dashboard"
     >
       <form onSubmit={handleSubmit} className="space-y-4">
         {/* Role Selection */}
@@ -193,7 +193,7 @@ const UpdatedLoginForm = () => {
       <div className="mt-6 p-3 bg-blue-50 border border-blue-200 rounded-lg">
         <p className="text-xs text-blue-600">
           <strong>Demo:</strong> Use any email/password to login. For production, 
-          connect to Supabase for secure authentication.
+          {/* connect to Supabase for secure authentication. */}
         </p>
       </div>
     </AuthLayout>

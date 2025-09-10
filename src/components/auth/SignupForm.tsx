@@ -126,7 +126,7 @@ const SignupForm = () => {
   return (
     <AuthLayout 
       title="Create Account" 
-      subtitle="Join the AquaGuard community"
+      subtitle="Join the Arogyam community"
     >
       <form onSubmit={handleSubmit} className="space-y-4">
         {currentStep === 1 && (
@@ -441,7 +441,7 @@ const SignupForm = () => {
         <div className="text-center">
           <div className="text-xs text-muted-foreground">
             Already have an account?{' '}
-            <Button variant="link" size="sm" className="text-xs p-0 h-auto">
+            <Button variant="link" onClick={() => navigate('/login')} size="sm" className="text-xs p-0 h-auto">
               Sign in here
             </Button>
           </div>

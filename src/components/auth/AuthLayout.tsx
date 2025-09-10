@@ -17,7 +17,7 @@ const AuthLayout = ({ children, title, subtitle }: AuthLayoutProps) => {
             <div className="p-2 bg-primary rounded-lg">
               <Droplets className="h-6 w-6 text-primary-foreground" />
             </div>
-            <h1 className="text-2xl font-bold text-primary">AquaGuard</h1>
+            <h1 className="text-2xl font-bold text-primary">Arogyam</h1>
           </div>
           <p className="text-muted-foreground">
             Community Health & Water Monitoring System

@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react';
 import Container from '../ui/Container';
 import { Button } from '../ui/Button';
 import { cn } from '@/lib/utils';
-import dashboardImage from '@/assets/aquaguard-dashboard.jpg';
+import dashboard from '../../assets/dashboard.png';
 
 const Hero = () => {
   
@@ -92,7 +92,7 @@ const Hero = () => {
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Button size="lg" className="rounded-full group">
-              <span onClick={() => navigate('/dashboard')} style={{ cursor: 'pointer' }}>
+              <span onClick={() => navigate('/signup')} style={{ cursor: 'pointer' }}>
                 Let's get Started
               </span>
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -107,7 +107,7 @@ const Hero = () => {
           <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 to-blue-400/5 pointer-events-none"></div>
           
           <img
-            src={dashboardImage}
+            src={dashboard}
             alt="AquaGuard Health Monitoring Dashboard showing real-time disease prevention analytics"
             className="w-full h-auto object-cover"
             loading="lazy"

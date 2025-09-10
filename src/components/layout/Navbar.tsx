@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Droplets, Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import Container from '../ui/Container';
 import { Button } from '../ui/Button';
@@ -42,7 +42,7 @@ const Navbar = () => {
           >
             <div className="relative h-8 w-8 rounded-lg bg-primary/10 flex items-center justify-center overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-tr from-primary to-blue-400 opacity-80"></div>
-              <span className="relative font-bold text-white text-lg">A</span>
+              <Droplets className="h-6 w-6 text-primary-foreground" />
             </div>
             <span className="font-semibold text-lg">Arogyam</span>
           </a>
