@@ -121,7 +121,7 @@ const DashboardSidebar = () => {
           </div>
           {!state || state === "expanded" && (
             <div>
-              <h1 className="text-lg font-semibold text-sidebar-foreground">AquaGuard</h1>
+              <h1 className="text-lg font-semibold text-sidebar-foreground">Arogya</h1>
               <p className="text-xs text-sidebar-foreground/60">Health Monitor</p>
             </div>
           )}

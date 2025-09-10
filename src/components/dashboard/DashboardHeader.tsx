@@ -2,7 +2,7 @@ import React from 'react';
 import { Bell, Search, User, LogOut, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/input';
-import { Badge } from '@/components/ui/badge';
+import { Badge, badgeVariants } from '@/components/ui/badge';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -13,8 +13,10 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { SidebarTrigger } from '@/components/ui/sidebar';
 import { mockUsers, mockAlerts } from '@/data/mockData';
+import { useNavigate } from 'react-router-dom';
 
 const DashboardHeader = () => {
+  const navigate = useNavigate();
   const currentUser = mockUsers[0]; // Mock current user
   const activeAlerts = mockAlerts.filter(alert => alert.status === 'active').length;
 
@@ -96,7 +98,7 @@ const DashboardHeader = () => {
                 <User className="mr-2 h-4 w-4" />
                 Profile
               </DropdownMenuItem>
-              <DropdownMenuItem>
+              <DropdownMenuItem onClick={() => navigate('/')}>
                 <LogOut className="mr-2 h-4 w-4" />
                 Log out
               </DropdownMenuItem>

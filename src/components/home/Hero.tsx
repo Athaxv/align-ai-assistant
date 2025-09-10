@@ -6,6 +6,9 @@ import Container from '../ui/Container';
 import { Button } from '../ui/Button';
 import { cn } from '@/lib/utils';
 import dashboard from '../../assets/dashboard.png';
+// Add import for SplineProvider and Spline
+import Spline from '@splinetool/react-spline';
+import SplineProvider from '../ui/spilneProvider';
 
 const Hero = () => {
   
@@ -51,6 +54,11 @@ const Hero = () => {
 
   return (
     <div className="relative overflow-hidden bg-white pt-24 pb-16 md:pb-20 lg:pt-32 lg:pb-24">
+      <div className="absolute inset-0 z-0 w-full h-full pointer-events-none" style={{ transform: 'translateY(-300px)' }}>
+        <SplineProvider>
+          <Spline scene="https://prod.spline.design/kIEq55kPdfiYfLCV/scene.splinecode" />
+        </SplineProvider>
+      </div>
       <div 
         ref={bgRef}
         className="absolute inset-0 -z-10"
