@@ -98,25 +98,28 @@ const HealthTrendsChart = () => {
                     type="monotone" 
                     dataKey="diarrhea" 
                     stroke="hsl(var(--chart-1))" 
-                    strokeWidth={2}
+                    strokeWidth={3}
                     name="Diarrhea Cases"
                     dot={{ fill: 'hsl(var(--chart-1))' }}
+                    activeDot={{ r: 8 }}
                   />
                   <Line 
                     type="monotone" 
                     dataKey="fever" 
                     stroke="hsl(var(--chart-2))" 
-                    strokeWidth={2}
+                    strokeWidth={3}
                     name="Fever Cases"
                     dot={{ fill: 'hsl(var(--chart-2))' }}
+                    activeDot={{ r: 8 }}
                   />
                   <Line 
                     type="monotone" 
                     dataKey="vomiting" 
                     stroke="hsl(var(--chart-3))" 
-                    strokeWidth={2}
+                    strokeWidth={3}
                     name="Vomiting Cases"
                     dot={{ fill: 'hsl(var(--chart-3))' }}
+                    activeDot={{ r: 8 }}
                   />
                 </>
               )}
@@ -128,6 +131,7 @@ const HealthTrendsChart = () => {
                   strokeWidth={3}
                   name="Total Cases"
                   dot={{ fill: 'hsl(var(--primary))' }}
+                  activeDot={{ r: 8 }}
                 />
               )}
             </LineChart>

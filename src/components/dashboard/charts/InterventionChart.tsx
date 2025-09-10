@@ -91,7 +91,7 @@ const InterventionChart = () => {
           {chartType === 'timeline' && (
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={interventionData}>
-                <CartesianGrid strokeDasharray="3 3" className="stroke-muted/30" />
+                <CartesianGrid strokeDasharray="3 3" className="stroke-gray-400" />
                 <XAxis 
                   dataKey="month" 
                   tick={{ fontSize: 12 }}

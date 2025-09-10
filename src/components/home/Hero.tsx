@@ -100,7 +100,7 @@ const Hero = () => {
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Button size="lg" className="rounded-full group">
-              <span onClick={() => navigate('/signup')} style={{ cursor: 'pointer' }}>
+              <span onClick={() => navigate('/login')} style={{ cursor: 'pointer' }}>
                 Let's get Started
               </span>
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
