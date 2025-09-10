@@ -3,7 +3,7 @@ export interface User {
   id: string;
   email: string;
   name: string;
-  role: 'health_worker' | 'clinic_staff' | 'admin';
+  role: 'asha_worker' | 'clinic_staff' | 'researcher' | 'health_official';
   avatar?: string;
   location?: Location;
   createdAt: string;

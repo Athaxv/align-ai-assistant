@@ -40,7 +40,7 @@ export const mockUsers: User[] = [
     id: '1',
     email: 'priya.sharma@health.gov.in',
     name: 'Priya Sharma',
-    role: 'health_worker',
+    role: 'asha_worker',
     location: mockLocations[0],
     createdAt: '2024-01-15T09:00:00Z',
     lastLogin: '2024-01-20T08:30:00Z'
@@ -58,7 +58,7 @@ export const mockUsers: User[] = [
     id: '3',
     email: 'admin@dhanbad-health.gov.in',
     name: 'Sita Devi',
-    role: 'admin',
+    role: 'health_official',
     location: mockLocations[2],
     createdAt: '2024-01-05T11:00:00Z',
     lastLogin: '2024-01-20T09:15:00Z'
