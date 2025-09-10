@@ -1,69 +1,68 @@
-# Welcome to your Lovable project
+# Arogyam - Waterborne Disease Preventive Alert System
 
-## Project info
+## Overview
+Arogyam is an AI-driven, predictive health alert system designed for flood-prone and water-borne disease-prone regions, especially focusing on the northeastern states of India. It integrates real-time symptom reporting from clinics, health workers, and volunteers with environmental data like water quality and weather forecasts to predict and prevent disease outbreaks.
 
-**URL**: https://lovable.dev/projects/a07871ea-4893-45d9-826e-818c33afa04d
+## Key Features
 
-## How can I edit this code?
+### User Management
+- Role-Based Access Control for Health Workers, Volunteers, Clinic Staff, and District Health Officials
+- User Authentication with Email and Password
+- Password Reset and Multilingual Support for local tribal languages
 
-There are several ways of editing your application.
+### Health Data Collection
+- Symptom Reporting Forms tailored for ASHA Workers, Clinics, and Volunteers
+- Optional Patient Identification with Age, Gender, Symptoms, Symptom Onset Date, and Location (GPS or Manual)
+- Offline Data Entry Capability with Seamless Sync
 
-**Use Lovable**
+### Data Integration
+- Automated retrieval of water quality parameters (turbidity, pH, bacterial presence) via public APIs
+- Manual fallback data entry for sensor failures
+- Integration with real-time weather data (rainfall intensity, flood warnings)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a07871ea-4893-45d9-826e-818c33afa04d) and start prompting.
+### Outbreak Prediction & Alerts
+- AI-driven outbreak risk prediction using a fusion of health reports, water quality, and weather data
+- Real-time, threshold-based alerts to district health officials via web notifications, SMS, or Email
 
-Changes made via Lovable will be committed automatically to this repo.
+### Interactive Dashboards
+- Geographic maps with color-coded risk zones
+- Trend Analysis with time-series graphs for reported cases and water quality
+- Intervention tracking including notes and success status
+- Exportable Reports (CSV, PDF)
 
-**Use your preferred IDE**
+### Educational Modules
+- Hygiene awareness content with multilingual support
+- Push notifications for educational campaigns
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Resource and Capacity Management
+- Real-time clinic and doctor capacity status
+- Automated inventory alerts linked to predicted disease outbreaks
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### E-Learning & Certification
+- Integrated e-learning modules for volunteers and clinic staff
+- Blockchain-based verifiable digital certificates for course completion and contribution recognition
 
-Follow these steps:
+### Offline Functionality
+- Offline data entry with automatic syncing when connectivity is restored
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### System Logs and Audits
+- Detailed logging of data entry, predictions, and alerts for accountability and traceability
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Getting Started
+Instructions to setup and run Arogyam.
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Future Enhancements
+- Public API for anonymized data sharing
+- SMS-based data collection for low-tech areas
+- Mobile application to complement the web platform
+- ML model retraining automation with new incoming data
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## Contributing
+Contributions are welcome. Please fork the repository and submit pull requests.
 
-**Edit a file directly in GitHub**
+## License
+Include appropriate open source license here.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/a07871ea-4893-45d9-826e-818c33afa04d) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+For more information, contact the project team.
