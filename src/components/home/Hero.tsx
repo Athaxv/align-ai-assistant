@@ -6,6 +6,8 @@ import Container from '../ui/Container';
 import { Button } from '../ui/Button';
 import { cn } from '@/lib/utils';
 import dashboard from '../../assets/dashboard.png';
+import new1 from '../../assets/new1.png';
+import new2 from '../../assets/new2.png';
 // Add import for SplineProvider and Spline
 import Spline from '@splinetool/react-spline';
 import SplineProvider from '../ui/spilneProvider';
@@ -115,7 +117,7 @@ const Hero = () => {
           <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 to-blue-400/5 pointer-events-none"></div>
           
           <img
-            src={dashboard}
+            src={new1}
             alt="AquaGuard Health Monitoring Dashboard showing real-time disease prevention analytics"
             className="w-full h-auto object-cover"
             loading="lazy"
