@@ -3,6 +3,7 @@ import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import Container from '../ui/Container';
 import { Button } from '../ui/Button';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,6 +24,7 @@ const Navbar = () => {
     { label: 'Analytics', href: '#analytics' },
     { label: 'FAQ', href: '#faq' },
   ];
+  const navigate = useNavigate();
 
   return (
     <header
@@ -42,7 +44,7 @@ const Navbar = () => {
               <div className="absolute inset-0 bg-gradient-to-tr from-primary to-blue-400 opacity-80"></div>
               <span className="relative font-bold text-white text-lg">A</span>
             </div>
-            <span className="font-semibold text-lg">AquaGuard</span>
+            <span className="font-semibold text-lg">Arogyam</span>
           </a>
 
           {/* Desktop Navigation */}
@@ -62,7 +64,7 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" size="sm">
+            <Button onClick={() => navigate('/signup')} variant="ghost" size="sm">
               Sign In
             </Button>
             <Button size="sm">Request Demo</Button>
