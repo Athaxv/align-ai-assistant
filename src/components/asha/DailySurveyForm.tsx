@@ -170,7 +170,7 @@ const DailySurveyForm = ({ onClose }: DailySurveyFormProps) => {
                     <MapPin className="h-4 w-4" />
                     Location (GPS)
                   </Label>
-                  <GPSLocationCapture onLocationUpdate={handleLocationCapture} />
+                  <GPSLocationCapture onLocationSelect={handleLocationCapture} />
                   {formData.location && (
                     <div className="p-2 bg-success/10 border border-success/20 rounded text-sm">
                       <p className="text-success font-medium">Location captured successfully</p>

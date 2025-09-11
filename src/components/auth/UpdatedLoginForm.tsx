@@ -67,7 +67,8 @@ const UpdatedLoginForm = () => {
       'asha_worker': '/dashboard/asha',
       'clinic_staff': '/dashboard/clinic', 
       'researcher': '/dashboard/researcher',
-      'health_official': '/dashboard'
+      'health_official': '/dashboard',
+      'public': '/dashboard/public'
     };
 
     navigate(roleRoutes[formData.role as keyof typeof roleRoutes] || '/dashboard');

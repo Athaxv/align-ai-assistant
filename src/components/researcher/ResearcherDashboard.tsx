@@ -4,6 +4,9 @@ import { Button } from '@/components/ui/Button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Microscope, Database, Upload, TrendingUp } from 'lucide-react';
 import { useAuth } from '@/contexts/AuthContext';
+import ResearcherProfileSetup from './ResearcherProfileSetup';
+import WaterBodyDataForm from './WaterBodyDataForm';
+import CSVDataUploader from './CSVDataUploader';
 
 const ResearcherDashboard = () => {
   const { user } = useAuth();
@@ -21,7 +24,9 @@ const ResearcherDashboard = () => {
         <Tabs defaultValue="overview" className="space-y-4">
           <TabsList>
             <TabsTrigger value="overview">Overview</TabsTrigger>
-            <TabsTrigger value="upload">Upload Data</TabsTrigger>
+            <TabsTrigger value="profile">Profile Setup</TabsTrigger>
+            <TabsTrigger value="water-body">Water Body Data</TabsTrigger>
+            <TabsTrigger value="upload">CSV Upload</TabsTrigger>
             <TabsTrigger value="analytics">Analytics</TabsTrigger>
           </TabsList>
 
@@ -68,23 +73,16 @@ const ResearcherDashboard = () => {
             </div>
           </TabsContent>
 
+          <TabsContent value="profile">
+            <ResearcherProfileSetup />
+          </TabsContent>
+
+          <TabsContent value="water-body">
+            <WaterBodyDataForm />
+          </TabsContent>
+
           <TabsContent value="upload">
-            <Card>
-              <CardHeader>
-                <CardTitle>Upload Water Quality Data</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <Button className="gap-2">
-                    <Upload className="h-4 w-4" />
-                    Upload CSV Data
-                  </Button>
-                  <p className="text-sm text-muted-foreground">
-                    Upload water quality measurements in CSV format
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
+            <CSVDataUploader />
           </TabsContent>
 
           <TabsContent value="analytics">

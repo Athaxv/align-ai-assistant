@@ -3,11 +3,12 @@ export interface User {
   id: string;
   email: string;
   name: string;
-  role: 'asha_worker' | 'clinic_staff' | 'researcher' | 'health_official';
+  role: 'asha_worker' | 'clinic_staff' | 'researcher' | 'health_official' | 'public';
   avatar?: string;
   location?: Location;
   createdAt: string;
   lastLogin?: string;
+  profile?: any; // Additional profile data for researchers
 }
 
 export interface Location {

@@ -12,6 +12,7 @@ import SignupForm from "./components/auth/SignupForm";
 import ASHADashboard from "./components/asha/ASHADashboard";
 import ClinicDashboard from "./components/clinic/ClinicDashboard";
 import ResearcherDashboard from "./components/researcher/ResearcherDashboard";
+import PublicDashboard from "./components/public/PublicDashboard";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +31,7 @@ const App = () => (
             <Route path="/dashboard/asha" element={<ASHADashboard />} />
             <Route path="/dashboard/clinic" element={<ClinicDashboard />} />
             <Route path="/dashboard/researcher" element={<ResearcherDashboard />} />
+            <Route path="/dashboard/public" element={<PublicDashboard />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
